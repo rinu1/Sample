@@ -1,0 +1,9 @@
+package BeqiSoft.Selenim;
+
+public class TestNg {
+	public void demo()
+	{
+		System.out.println("hello");
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;AutomationTesting.Selenium.AlertSession.java&apos; to &apos;ActionSession.java&apos;&#x0D;&#x0A;- Original project: &apos;Selenium&apos;&#x0D;&#x0A;- Original element: &apos;AutomationTesting.Selenium.AlertSession.java&apos;&#x0D;&#x0A;- Renamed element: &apos;AutomationTesting.Selenium.ActionSession.java&apos;" description="Rename compilation unit &apos;AlertSession.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;AutomationTesting.Selenium{AlertSession.java" name="ActionSession.java" references="false" stamp="1663610097132" version="1.0"/>
+</session>

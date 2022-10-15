@@ -1,0 +1,41 @@
+package BeqiSoft.Selenim;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class Table extends Browser{
+	
+	
+	public void tableDropdown()
+	{
+	List<WebElement> Leagues=	driver.findElements(By.xpath("//button[@class='button-filter med dropdown-toggle']/following-sibling::ul[@class='dropdown-menu med']/li"));
+	for(WebElement league1:Leagues)
+	{
+		System.out.println(league1.getText());
+	}
+	}
+	public static WebDriver driver;
+	public static void main(String[] args) throws InterruptedException {
+		Table Te= new Table();
+		
+		driver=Te.browserInvoke(driver);
+		driver.manage().window().maximize();
+		driver.get("https://www.espn.in/cricket/table/series/19451/season/2022/icc-womens-t20-world-cup-qualifier");
+		List<WebElement> Team=driver.findElements(By.xpath("//span[contains(text(),'Group A')]/div/table/thead"));
+		for(WebElement team:Team)
+		{
+			System.out.print(team.getText()+" ");
+			Thread.sleep(1000);
+		}
+		List<WebElement> TableTeam=driver.findElements(By.xpath("//tbody/tr[@class='standings-row']"));
+		for(WebElement table:TableTeam)
+		{
+			String name=table.getText();
+			System.out.println(name);
+			Thread.sleep(1000);
+		}
+	 }
+	}	
